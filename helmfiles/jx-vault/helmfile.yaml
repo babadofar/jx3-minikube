@@ -1,0 +1,24 @@
+filepath: ""
+environments:
+  default:
+    values:
+      - jx-values.yaml
+namespace: jx-vault
+repositories:
+  - name: banzaicloud-stable
+    url: https://kubernetes-charts.banzaicloud.com
+  - name: jxgh
+    url: https://jenkins-x-charts.github.io/repo
+releases:
+  - chart: banzaicloud-stable/vault-operator
+    version: 1.16.1
+    name: vault-operator
+    values:
+      - jx-values.yaml
+  - chart: jxgh/vault-instance
+    version: 1.0.27
+    name: vault-instance
+    values:
+      - jx-values.yaml
+templates: {}
+renderedvalues: {}
