@@ -32,6 +32,6 @@ spec:
   pipelineUser:
     username: babadofar
   repository: bucketrepo
-  secretStorage: local
+  secretStorage: vault
   vault: {}
   webhook: lighthouse
