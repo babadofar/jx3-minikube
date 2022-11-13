@@ -11,7 +11,7 @@ repositories:
     url: https://jenkins-x-charts.github.io/repo
 releases:
   - chart: banzaicloud-stable/vault-operator
-    version: 1.16.1
+    version: 1.10.0
     name: vault-operator
     values:
       - jx-values.yaml
